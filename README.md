@@ -110,11 +110,11 @@ This project is licensed under the **MIT License** — feel free to use and modi
 
 ## 👤 Author
 
-**Ayushmaan Singh Yadav**  
-🎓 *B.Tech in Computer Science (AI & ML)*  
+**Rimjhim Mishra**  
+🎓 *B.Tech in Computer Science)*  
 🏫 *SR Institute of Management and Technology*  
-📬 *ayushmaan@example.com*  
+📬 *mishrarimjhim.009@gmail.com*  
 
-🔗 [LinkedIn](https://www.linkedin.com/in/ayushmaansinghyadav/?trk=opento_sprofile_pfeditor) | [GitHub](https://github.com/asteriskayush007)
+🔗 [LinkedIn](https://www.linkedin.com/in/rimjhim-mishra-8771632a3/) | [GitHub](https://github.com/mishraji654)
 
 ---
