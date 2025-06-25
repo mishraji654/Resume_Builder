@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light modern">
+
+  <div id="loader" class="loader">Preparing Download...</div>
+
+  <header>
+    <h1>Interactive Resume Builder</h1>
+    <div class="controls">
+      <label>Theme:
+        <select id="theme-select">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="creative">Creative</option>
+        </select>
+      </label>
+      <label>Font:
+        <select id="font-select">
+          <option value="modern">Modern</option>
+          <option value="classic">Classic</option>
+          <option value="handwritten">Handwritten</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <form id="resumeForm">
+        <div class="progress-wrapper">
+            <div id="progress-bar"></div>
+        </div>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <textarea id="summary" placeholder="Profile Summary"></textarea>
+
+        <input type="text" id="skills" placeholder="Skills (comma separated)">
+
+        <div id="experience-section">
+          <h3>Experience</h3>
+          <div class="exp-block">
+            <input type="text" class="exp-title" placeholder="Job Title">
+            <input type="text" class="exp-company" placeholder="Company">
+            <input type="text" class="exp-duration" placeholder="Duration">
+            <textarea class="exp-desc" placeholder="Job Description"></textarea>
+          </div>
+          <button type="button" onclick="addExperience()">+ Add Experience</button>
+        </div>
+
+        <div id="projects-section">
+          <h3>Projects</h3>
+          <div class="proj-block">
+            <input type="text" class="proj-title" placeholder="Project Title">
+            <textarea class="proj-desc" placeholder="Description"></textarea>
+            <input type="text" class="proj-tech" placeholder="Tech Stack">
+            <input type="text" class="proj-link" placeholder="Live Link">
+            <input type="text" class="proj-github" placeholder="GitHub Link">
+          </div>
+          <button type="button" onclick="addProject()">+ Add Project</button>
+        </div>
+
+        <button type="reset" onclick="clearPreview()">Clear</button>
+      </form>
+    </section>
+
+    <section class="preview-section">
+      <h2>Live Preview</h2>
+      <div id="preview" class="resume-card"></div>
+      <button onclick="downloadPDF()">⬇️ Download Resume</button>
+    </section>
+  </main>
+
+  <div id="pdf-preview" style="display: none;"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
